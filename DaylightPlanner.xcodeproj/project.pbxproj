@@ -6,6 +6,17 @@
 	objectVersion = 90;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2284E591307CA2810063171C /* MLXHuggingFace in Frameworks */ = {isa = PBXBuildFile; productRef = 2284E590307CA2810063171C /* MLXHuggingFace */; };
+		2284E593307CA2810063171C /* MLXLLM in Frameworks */ = {isa = PBXBuildFile; productRef = 2284E592307CA2810063171C /* MLXLLM */; };
+		2284E595307CA2810063171C /* MLXLMCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 2284E594307CA2810063171C /* MLXLMCommon */; };
+		2284E5A3307CA8470063171C /* HuggingFace in Frameworks */ = {isa = PBXBuildFile; productRef = 2284E5A2307CA8470063171C /* HuggingFace */; };
+		2284E5A5307CA8480063171C /* HuggingFaceOAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2284E5A4307CA8480063171C /* HuggingFaceOAuth */; };
+		2284E5A8307CA8720063171C /* Hub in Frameworks */ = {isa = PBXBuildFile; productRef = 2284E5A7307CA8720063171C /* Hub */; };
+		2284E5AA307CA8720063171C /* Tokenizers in Frameworks */ = {isa = PBXBuildFile; productRef = 2284E5A9307CA8720063171C /* Tokenizers */; };
+		2284E5AC307CA8720063171C /* Transformers in Frameworks */ = {isa = PBXBuildFile; productRef = 2284E5AB307CA8720063171C /* Transformers */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		000000000000000000000120 /* DaylightPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaylightPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -22,6 +33,14 @@
 		000000000000000130000000 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				2284E5A8307CA8720063171C /* Hub in Frameworks */,
+				2284E5AA307CA8720063171C /* Tokenizers in Frameworks */,
+				2284E5AC307CA8720063171C /* Transformers in Frameworks */,
+				2284E593307CA2810063171C /* MLXLLM in Frameworks */,
+				2284E5A5307CA8480063171C /* HuggingFaceOAuth in Frameworks */,
+				2284E595307CA2810063171C /* MLXLMCommon in Frameworks */,
+				2284E591307CA2810063171C /* MLXHuggingFace in Frameworks */,
+				2284E5A3307CA8470063171C /* HuggingFace in Frameworks */,
 			);
 		};
 /* End PBXFrameworksBuildPhase section */
@@ -30,8 +49,8 @@
 		000000000000000000000001 = {
 			isa = PBXGroup;
 			children = (
-				000000000000000000000010 /* DaylightPlanner */,
 				000000000000000000000020 /* Products */,
+				000000000000000000000010 /* DaylightPlanner */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +79,16 @@
 				000000000000000000000010 /* DaylightPlanner */,
 			);
 			name = DaylightPlanner;
+			packageProductDependencies = (
+				2284E590307CA2810063171C /* MLXHuggingFace */,
+				2284E592307CA2810063171C /* MLXLLM */,
+				2284E594307CA2810063171C /* MLXLMCommon */,
+				2284E5A2307CA8470063171C /* HuggingFace */,
+				2284E5A4307CA8480063171C /* HuggingFaceOAuth */,
+				2284E5A7307CA8720063171C /* Hub */,
+				2284E5A9307CA8720063171C /* Tokenizers */,
+				2284E5AB307CA8720063171C /* Transformers */,
+			);
 			productName = MyApp;
 			productReference = 000000000000000000000120 /* DaylightPlanner.app */;
 			productType = "com.apple.product-type.application";
@@ -79,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 000000000000000010000000 /* Build configuration list for PBXProject "Untitled Project" */;
+			buildConfigurationList = 000000000000000010000000 /* Build configuration list for PBXProject "DaylightPlanner" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -88,6 +117,11 @@
 			);
 			mainGroup = 000000000000000000000001;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2284E58F307CA2810063171C /* XCRemoteSwiftPackageReference "mlx-swift-lm" */,
+				2284E5A1307CA8470063171C /* XCRemoteSwiftPackageReference "swift-huggingface" */,
+				2284E5A6307CA8720063171C /* XCRemoteSwiftPackageReference "swift-transformers" */,
+			);
 			preferredProjectObjectVersion = 90;
 			productRefGroup = 000000000000000000000020 /* Products */;
 			projectDirPath = "";
@@ -115,7 +149,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		000000000000000011000000 /* Debug configuration for PBXProject "Untitled Project" */ = {
+		000000000000000011000000 /* Debug configuration for PBXProject "DaylightPlanner" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -185,7 +219,7 @@
 			};
 			name = Debug;
 		};
-		000000000000000012000000 /* Release configuration for PBXProject "Untitled Project" */ = {
+		000000000000000012000000 /* Release configuration for PBXProject "DaylightPlanner" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -269,7 +303,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = "$(RECOMMENDED_IPHONEOS_DEPLOYMENT_TARGET)";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "devplaceholder.$(PROJECT_UNIQUE_VALUE:identifier).$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -309,7 +343,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = "$(RECOMMENDED_IPHONEOS_DEPLOYMENT_TARGET)";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "devplaceholder.$(PROJECT_UNIQUE_VALUE:identifier).$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -330,11 +364,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		000000000000000010000000 /* Build configuration list for PBXProject "Untitled Project" */ = {
+		000000000000000010000000 /* Build configuration list for PBXProject "DaylightPlanner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				000000000000000011000000 /* Debug configuration for PBXProject "Untitled Project" */,
-				000000000000000012000000 /* Release configuration for PBXProject "Untitled Project" */,
+				000000000000000011000000 /* Debug configuration for PBXProject "DaylightPlanner" */,
+				000000000000000012000000 /* Release configuration for PBXProject "DaylightPlanner" */,
 			);
 			defaultConfigurationName = Release;
 		};
@@ -347,6 +381,76 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2284E58F307CA2810063171C /* XCRemoteSwiftPackageReference "mlx-swift-lm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ml-explore/mlx-swift-lm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.32.3;
+			};
+		};
+		2284E5A1307CA8470063171C /* XCRemoteSwiftPackageReference "swift-huggingface" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/huggingface/swift-huggingface";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		2284E5A6307CA8720063171C /* XCRemoteSwiftPackageReference "swift-transformers" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/huggingface/swift-transformers";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2284E590307CA2810063171C /* MLXHuggingFace */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2284E58F307CA2810063171C /* XCRemoteSwiftPackageReference "mlx-swift-lm" */;
+			productName = MLXHuggingFace;
+		};
+		2284E592307CA2810063171C /* MLXLLM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2284E58F307CA2810063171C /* XCRemoteSwiftPackageReference "mlx-swift-lm" */;
+			productName = MLXLLM;
+		};
+		2284E594307CA2810063171C /* MLXLMCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2284E58F307CA2810063171C /* XCRemoteSwiftPackageReference "mlx-swift-lm" */;
+			productName = MLXLMCommon;
+		};
+		2284E5A2307CA8470063171C /* HuggingFace */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2284E5A1307CA8470063171C /* XCRemoteSwiftPackageReference "swift-huggingface" */;
+			productName = HuggingFace;
+		};
+		2284E5A4307CA8480063171C /* HuggingFaceOAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2284E5A1307CA8470063171C /* XCRemoteSwiftPackageReference "swift-huggingface" */;
+			productName = HuggingFaceOAuth;
+		};
+		2284E5A7307CA8720063171C /* Hub */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2284E5A6307CA8720063171C /* XCRemoteSwiftPackageReference "swift-transformers" */;
+			productName = Hub;
+		};
+		2284E5A9307CA8720063171C /* Tokenizers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2284E5A6307CA8720063171C /* XCRemoteSwiftPackageReference "swift-transformers" */;
+			productName = Tokenizers;
+		};
+		2284E5AB307CA8720063171C /* Transformers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2284E5A6307CA8720063171C /* XCRemoteSwiftPackageReference "swift-transformers" */;
+			productName = Transformers;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 000000000000000000000000 /* Project object */;
 }
